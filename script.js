@@ -7,9 +7,6 @@ const display = document.getElementById("display");
 
 function num(value) {
   display.value += value;
-  if (display.value.includes("=")) {
-    startCalc();
-  }
 }
 
 function startCalc() {
