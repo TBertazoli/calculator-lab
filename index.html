@@ -10,28 +10,24 @@
   <body>
     <h1>Calculator Lab</h1>
     <input type="text" id="display" />
-    <section id="buttons">
-      <div id="r0c0" class="digits">7</div>
-      <div id="r0c1" class="digits">8</div>
-      <div id="r0c2" class="digits">9</div>
-      <div id="r0c3" class="digits">/</div>
+    <section id="table">
+      <input type="button" value="7" class="digits" onclick="num('7')" />
+      <input type="button" value="8" class="digits" onclick="num('8')" />
+      <input type="button" value="9" class="digits" onclick="num('9')" />
+      <input type="button" value="/" class="digits" onclick="num('/')" />
+      <input type="button" value="4" class="digits" onclick="num('4')" />
+      <input type="button" value="5" class="digits" onclick="num('5')" />
+      <input type="button" value="6" class="digits" onclick="num('6')" />
+      <input type="button" value="*" class="digits" onclick="num('*')" />
+      <input type="button" value="1" class="digits" onclick="num('1')" />
+      <input type="button" value="2" class="digits" onclick="num('2')" />
+      <input type="button" value="3" class="digits" onclick="num('3')" />
+      <input type="button" value="-" class="digits" onclick="num('-')" />
+      <input type="button" value="0" class="digits" onclick="num('0')" />
+      <input type="button" value="." class="digits" onclick="num('.')" />
+      <input type="button" value="+" class="digits" onclick="num('+')" />
+      <input type="button" value="=" class="digits" onclick="startCalc()"/>
 
-      <div id="r1c0" class="digits">4</div>
-      <div id="r1c1" class="digits">5</div>
-      <div id="r1c2" class="digits">6</div>
-      <div id="r1c3" class="digits">*</div>
-
-      <div id="r2c0" class="digits">1</div>
-      <div id="r2c1" class="digits">2</div>
-      <div id="r2c2" class="digits">3</div>
-      <div id="r2c3" class="digits">-</div>
-
-      <div id="r3c0" class="digits">0</div>
-      <div id="r3c1" class="digits">.</div>
-      <div id="r3c2" class="digits">+</div>
-      <div id="r3c3" class="digits">=</div>
-    </section>
-
-    <button id="clear" type="reset">C</button>
+    <input type="button" value="C" onclick="resetCalc()"></button>
   </body>
 </html>
