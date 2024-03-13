@@ -6,6 +6,14 @@ const display = document.getElementById("display");
 /*----- functions -----*/
 
 function num(value) {
+  let strLength = display.value.length;
+  let signals = ["+", "-", "*", "/"];
+  if (
+    signals.includes(display.value[strLength - 1]) &&
+    signals.includes(value)
+  ) {
+    return;
+  }
   display.value += value;
 }
 
